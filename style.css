@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.btnsContainer{
+    display: flex;
+    height: max-content;
+    width: max-content;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+}
+
+.textContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gridContainer{
+    display: grid;
+    justify-content: center; 
+    width: 100%; 
+    grid-template-areas: 
+    "a b";
+    row-gap: 100px;
+    column-gap: 100px;
+    margin-top: 100px;
+}
+
+/* handling responsiveness */
+@media only screen and (max-width: 768px) {
+    .gridContainer{
+        display: grid;
+        grid-template-areas: "a";
+        row-gap: 30px;
+        place-items: center;
+    }
+}
